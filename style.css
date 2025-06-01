@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+
+  .container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  #display {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+  }
+
+  .clock-face {
+    border: 8px solid #333;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #fff;
+  }
+
+  .hand {
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    background-color: #333;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  button:active {
+    background-color: #00408d;
+    transform: scale(0.98);
+  }
+
+  #laps {
+    margin-top: 20px;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  #laps li {
+    font-size: 1.2em;
+    color: #333;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #laps li:last-child {
+    border-bottom: none;
+  }
+
+  #laps li span {
+    font-weight: bold;
+    color: #007bff;
+  }
